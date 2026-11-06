@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Производство электротехнического оборудования РЗА | ЭСТРА</title>
+<meta name="description" content="Разрабатываем и выпускаем в Новосибирске устройства РЗА 6–35 кВ: 39 изделий собственного производства, гарантия 10 лет, средний срок отгрузки 10 дней.">
+<!-- URL: /company/proizvodstvo/  ·  Хлебные крошки: Главная › Компания › Производство  ·  Меню: «Компания», рядом с «О компании» -->
+<!-- Montserrat уже подключен на rza-estra.ru; строка ниже нужна только для просмотра файла отдельно -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Обертка только для просмотра файла; в шаблоне сайта контент уже стоит в .maxwidth-theme */
+.ep-preview{max-width:1240px;margin:0 auto;padding:32px 24px 64px;background:#fff}
+body{margin:0;background:#fff}
+
+/* ===== Стили страницы: все селекторы внутри .ep, чтобы не задеть тему Аспро =====
+   Правила скилла landing-page-design: шкала размеров Tailwind, токены отступов 0/2/4/8/12/16/24/32/40/48/64/80/96,
+   радиусы 2/4/6/8/12/16/24/full, фоны без градиентов, рамки только по периметру, кривая .22,1,.36,1.
+   Шрифт остается Montserrat: он уже подключен на сайте, второй шрифт добавлять нельзя. */
+.ep{--ep-blue:#00549f;--ep-blue-hover:#00447f;--ep-blue-soft:#00549f14;--ep-text:#454854;--ep-head:#1f232b;--ep-muted:#5b6270;--ep-line:#e2e6eb;--ep-line-light:#edf0f3;--ep-panel:#f5f7fa;--ep-ease:cubic-bezier(.22,1,.36,1);
+  font-family:"Montserrat",Arial,sans-serif;font-size:16px;line-height:24px;font-weight:400;color:var(--ep-text);box-sizing:border-box;-webkit-font-smoothing:antialiased}
+.ep *,.ep *::before,.ep *::after{box-sizing:inherit}
+.ep h1,.ep h2,.ep h3{color:var(--ep-head);font-weight:600;margin:0;text-wrap:balance}
+.ep p,.ep li{text-wrap:pretty}
+
+/* Heading 1: градиент только на тексте, слева направо #000 → #666; ширина 680 */
+.ep h1{font-size:36px;line-height:40px;max-width:680px;margin-bottom:24px;background-image:linear-gradient(90deg,#000,#666);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){.ep h1{-webkit-text-fill-color:currentColor}}
+.ep h2{font-size:24px;line-height:32px;margin-bottom:16px}
+.ep h2::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--ep-blue);margin-bottom:12px}
+.ep h3{font-size:20px;line-height:28px;margin:40px 0 16px}
+.ep p{margin:0 0 16px}
+.ep a{color:var(--ep-blue);text-decoration:none}
+.ep a:hover{text-decoration:underline}
+.ep a:focus-visible{outline:2px solid var(--ep-blue);outline-offset:2px;border-radius:2px}
+.ep strong{color:var(--ep-head);font-weight:600}
+.ep-section{margin-top:80px;scroll-margin-top:24px}
+.ep-section>p,.ep-section>.ep-list{max-width:720px}
+.ep-lead{font-size:18px;line-height:28px;max-width:680px;margin-bottom:32px}
+/* первый экран: слева текст (680), справа фото на всю высоту колонки */
+.ep-hero__top{display:grid;grid-template-columns:minmax(0,680px) minmax(0,1fr);gap:48px;align-items:stretch;margin-bottom:48px}
+.ep-hero__media .ep-photo{max-width:none;margin:0;height:100%;min-height:320px;aspect-ratio:auto}
+.ep-note{font-size:14px;line-height:20px;color:var(--ep-muted)}
+
+/* кнопки: Button-md, отступы 8 и 12 по правилу, скругление full */
+.ep-btns{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 0}
+.ep-btn{display:inline-flex;align-items:center;padding:8px 12px;border-radius:9999px;font-weight:600;font-size:16px;line-height:24px;border:1px solid var(--ep-blue);background:var(--ep-blue);color:#fff!important;transition:background-color .3s var(--ep-ease),border-color .3s var(--ep-ease),transform .5s var(--ep-ease)}
+.ep-btn:hover{background:var(--ep-blue-hover);border-color:var(--ep-blue-hover);text-decoration:none!important}
+.ep-btn:active{transform:scale(.98)}
+.ep-btn--outline{background:#fff;color:var(--ep-blue)!important}
+.ep-btn--outline:hover{background:var(--ep-blue-soft);border-color:var(--ep-blue)}
+.ep-btn--white{background:#fff;border-color:#fff;color:var(--ep-blue)!important}
+.ep-btn--white:hover{background:#eaf1f8;border-color:#eaf1f8}
+
+/* навигация по странице */
+.ep-nav{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0 0}
+.ep-nav a{display:inline-block;padding:4px 12px;border:1px solid var(--ep-line);border-radius:9999px;background:#fff;color:var(--ep-text);font-size:14px;line-height:20px;font-weight:500;transition:border-color .3s var(--ep-ease),color .3s var(--ep-ease)}
+.ep-nav a:hover{border-color:var(--ep-blue);color:var(--ep-blue);text-decoration:none}
+
+/* факты: плитки без рамок, фон плоский */
+.ep-facts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.ep-fact{background:var(--ep-panel);border-radius:8px;padding:24px 16px}
+.ep-fact__num{display:block;color:var(--ep-blue);font-size:30px;line-height:36px;font-weight:600;margin-bottom:8px;white-space:nowrap}
+.ep-fact__text{display:block;font-size:14px;line-height:20px;color:var(--ep-text)}
+
+/* таблицы */
+.ep-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--ep-line);border-radius:8px}
+.ep table{width:100%;border-collapse:collapse;font-size:16px;line-height:24px}
+.ep th{background:var(--ep-panel);color:var(--ep-muted);font-weight:600;font-size:12px;line-height:16px;text-transform:uppercase;letter-spacing:.04em;text-align:left;padding:12px 16px;border-bottom:1px solid var(--ep-line);white-space:nowrap}
+.ep td{padding:16px;border-bottom:1px solid var(--ep-line-light);vertical-align:top}
+.ep tr:last-child td{border-bottom:0}
+.ep td:first-child{min-width:200px}
+.ep-table--nowrap-first td:first-child{font-weight:600;color:var(--ep-head)}
+.ep-num{white-space:nowrap;font-weight:600;color:var(--ep-head);font-variant-numeric:tabular-nums}
+
+/* шаги производства */
+.ep-steps{list-style:none;margin:0;padding:0;counter-reset:ep-step}
+.ep-steps>li{counter-increment:ep-step;position:relative;padding:0 0 32px 64px}
+.ep-steps>li::before{content:counter(ep-step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--ep-blue);color:#fff;font-weight:600;font-size:18px;line-height:40px;text-align:center}
+.ep-steps>li:not(:last-child)::after{content:"";position:absolute;left:19px;top:48px;bottom:8px;width:2px;background:var(--ep-line)}
+.ep-steps p{max-width:720px}
+.ep-step__title{display:block;color:var(--ep-head);font-weight:600;font-size:20px;line-height:28px;margin:4px 0 8px}
+.ep-step__time{display:inline-block;background:var(--ep-blue-soft);color:var(--ep-blue);font-weight:600;font-size:14px;line-height:20px;padding:2px 12px;border-radius:9999px;margin:0 0 12px}
+
+/* список с маркером */
+.ep-list{list-style:none;margin:0 0 16px;padding:0}
+.ep-list>li{position:relative;padding-left:24px;margin-bottom:12px}
+.ep-list>li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--ep-blue)}
+
+/* карточки: рамка по периметру */
+.ep-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(256px,1fr));gap:24px}
+.ep-card{border:1px solid var(--ep-line);border-radius:8px;padding:24px;background:#fff}
+.ep-card__title{display:block;font-weight:600;font-size:20px;line-height:28px;color:var(--ep-head);margin-bottom:8px}
+.ep-card p:last-child{margin-bottom:0}
+.ep a.ep-card{display:block;color:var(--ep-text);transition:border-color .3s var(--ep-ease),transform .5s var(--ep-ease)}
+.ep a.ep-card:hover{border-color:var(--ep-blue);transform:translateY(-2px);text-decoration:none}
+.ep a.ep-card:hover .ep-card__title{color:var(--ep-blue)}
+
+/* две колонки: текст и таймлайн */
+.ep-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:start}
+.ep-timeline{list-style:none;margin:0;padding:32px;background:var(--ep-panel);border-radius:8px}
+.ep-timeline li{position:relative;padding:0 0 24px 96px;font-size:16px;line-height:24px}
+.ep-timeline li:last-child{padding-bottom:0}
+.ep-timeline li:not(.ep-timeline__title)::before{content:"";position:absolute;left:68px;top:7px;width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid var(--ep-blue)}
+.ep-timeline li:not(.ep-timeline__title):not(:last-child)::after{content:"";position:absolute;left:72px;top:19px;bottom:-7px;width:2px;background:var(--ep-line)}
+.ep-timeline b{position:absolute;left:0;top:-2px;color:var(--ep-blue);font-weight:600;font-size:18px;line-height:28px}
+.ep-timeline li.ep-timeline__title{padding:0 0 24px;font-weight:600;color:var(--ep-head);font-size:20px;line-height:28px}
+
+/* кейс: тонированный фон, без рамки */
+.ep-case{margin-top:32px;background:var(--ep-blue-soft);padding:24px 32px;border-radius:8px;font-size:18px;line-height:28px}
+
+/* путь заказа */
+.ep-flow{list-style:none;margin:0 0 32px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(224px,1fr));gap:16px;counter-reset:ep-flow}
+.ep-flow li{counter-increment:ep-flow;border:1px solid var(--ep-line);border-radius:8px;padding:24px;font-size:16px;line-height:24px;background:#fff}
+.ep-flow li::before{content:counter(ep-flow);display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--ep-blue);color:#fff;font-weight:600;font-size:16px;line-height:1;margin-bottom:12px}
+
+.ep-seals{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:48px;margin:0 0 32px}
+.ep-seal{display:block;flex:0 1 416px;max-width:416px;transition:transform .5s var(--ep-ease)}
+.ep-seal:hover{transform:scale(1.03)}
+.ep-seal svg{display:block;width:100%;height:auto}
+
+/* реестры: подблоки */
+.ep-reg{margin-top:32px;max-width:720px}
+.ep-reg p{margin-bottom:8px}
+
+/* площадка */
+.ep-site{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.ep-map{border-radius:8px;overflow:hidden;background:#f2f2f2;min-height:320px;display:flex;align-items:center;justify-content:center;color:var(--ep-muted);font-size:14px;line-height:20px;text-align:center;padding:24px}
+
+/* FAQ: Title 2 */
+.ep-faq__item{padding:24px 0;border-bottom:1px solid var(--ep-line)}
+.ep-faq__item:first-of-type{border-top:1px solid var(--ep-line)}
+.ep .ep-faq__q{margin:0 0 8px;font-weight:500;font-size:18px;line-height:28px}
+.ep-faq .ep-faq__a{max-width:720px}
+.ep-faq .ep-faq__a p:last-child{margin-bottom:0}
+
+/* финальный призыв: плоский фон */
+.ep-cta{background:var(--ep-blue);color:#fff;border-radius:16px;padding:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.ep-cta h2{color:#fff;margin-bottom:8px}
+.ep-cta h2::before{display:none}
+.ep-cta p{margin:0;max-width:640px}
+.ep-cta .ep-btns{margin:0}
+.ep-cta a.ep-phone{color:#fff;font-weight:600;font-size:20px;line-height:28px;white-space:nowrap}
+
+/* тезис: Heading 3, ширина 680; слова проявляются по одному (класс ep-tagline--js ставит скрипт) */
+.ep-tagline__text{max-width:680px;margin:0;font-size:36px;line-height:40px;font-weight:600;color:var(--ep-head);text-wrap:balance}
+.ep-tagline__line{display:block}
+.ep-tagline__line+.ep-tagline__line{margin-top:16px}
+.ep-tagline--js .ep-w{opacity:.3;transition:opacity .5s var(--ep-ease)}
+.ep-tagline--js .ep-w.is-on{opacity:1}
+
+/* ===== Служебное: заглушки, фото, условные блоки. Перед публикацией удалить вместе с этим разделом стилей ===== */
+.ep-ph{display:inline;background:#fff4cc;border:1px dashed #d9a300;border-radius:4px;padding:2px 8px;font-size:14px;line-height:20px;color:#6b5200;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.ep-ph::before{content:"КЛИЕНТ: ";font-weight:700}
+.ep-photo{margin:16px 0 4px;max-width:480px;aspect-ratio:16/9;background:#f2f2f2 repeating-linear-gradient(45deg,#f2f2f2 0 16px,#ececec 16px 32px);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;color:var(--ep-muted);font-size:12px;line-height:16px}
+.ep-photo strong{font-size:14px;line-height:20px;color:var(--ep-head)}
+.ep-photo--wide{max-width:none;aspect-ratio:21/8}
+.ep-cond{border:2px dashed #d9a300;border-radius:8px;padding:16px 24px;margin:24px 0;position:relative}
+.ep-cond::before{content:"Публиковать, только если клиент подтвердит";display:block;font-size:12px;line-height:16px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#8a6a00;margin-bottom:8px}
+.ep-hold{border:2px dashed #d9a300;border-radius:8px;padding:24px}
+.ep-hold-label{display:inline-block;font-size:12px;line-height:16px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#8a6a00;margin-bottom:12px}
+
+/* адаптив */
+@media (min-width:768px){.ep tbody tr:hover td{background:#fafbfc}}
+@media (max-width:1180px){.ep-facts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1100px){
+  .ep-split,.ep-site{grid-template-columns:1fr;gap:48px}
+  .ep-hero__top{grid-template-columns:minmax(0,1fr);gap:32px;margin-bottom:32px}
+  .ep-hero__media .ep-photo{height:auto;min-height:0;aspect-ratio:16/9}
+}
+@media (max-width:767px){
+  .ep-seals{flex-direction:column;gap:8px}
+  .ep-seal{flex-basis:auto;width:100%;max-width:360px}
+  .ep h1{font-size:30px;line-height:36px}
+  .ep h2{font-size:20px;line-height:28px}
+  .ep h3{font-size:18px;line-height:28px}
+  .ep-section{margin-top:64px}
+  .ep-btn{min-height:44px}
+  .ep-facts{grid-template-columns:1fr 1fr;gap:12px}
+  .ep-fact{padding:16px}
+  .ep-fact__num{font-size:24px;line-height:32px}
+  .ep-fact:last-child{grid-column:1/-1}
+  .ep-nav{flex-wrap:nowrap;overflow-x:auto;margin-right:-16px;padding-bottom:8px;scrollbar-width:none}
+  .ep-nav a{flex:none;white-space:nowrap}
+  /* таблицы на телефоне: строка = карточка, подпись поля из data-label */
+  .ep-table-wrap{border:0;overflow:visible}
+  .ep table,.ep tbody,.ep tr,.ep td{display:block;width:100%}
+  .ep thead{display:none}
+  .ep tr{border:1px solid var(--ep-line);border-radius:8px;padding:4px 16px;margin-bottom:12px}
+  .ep td,.ep tr:last-child td{border-bottom:1px solid var(--ep-line-light);padding:12px 0;min-width:0}
+  .ep td:last-child{border-bottom:0}
+  .ep td:first-child{min-width:0}
+  .ep td[data-label]::before{content:attr(data-label);display:block;font-size:12px;line-height:16px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--ep-muted);margin-bottom:4px}
+  .ep td:first-child[data-label]::before{display:none}
+  .ep .ep-num{white-space:normal}
+  .ep-steps>li{padding-left:56px}
+  .ep-timeline{padding:24px 16px}
+  .ep-timeline li{padding-left:84px}
+  .ep-timeline li:not(.ep-timeline__title)::before{left:58px}
+  .ep-timeline li:not(.ep-timeline__title):not(:last-child)::after{left:62px}
+  .ep-case{padding:24px 16px;font-size:16px;line-height:24px}
+  .ep-cta{padding:32px 24px}
+  .ep-hold{padding:16px}
+  .ep-tagline__text{font-size:24px;line-height:32px}
+  .ep-preview{padding:16px 16px 48px}
+}
+
+/* без движения: только смена цвета */
+@media (prefers-reduced-motion:reduce){
+  .ep *,.ep *::after{transition-duration:.01ms!important}
+  .ep-btn:active,.ep a.ep-card:hover,.ep-seal:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ep-preview">
+
+<!-- ================= НАЧАЛО КОНТЕНТА: вставлять в шаблон отсюда ================= -->
+<div class="ep">
+
+<!-- БЛОК 1: первый экран. Если шаблон Битрикса сам выводит H1, этот H1 удалить -->
+<section class="ep-hero">
+  <div class="ep-hero__top">
+    <div class="ep-hero__text">
+      <h1>Производство электротехнического оборудования: устройства РЗА 6–35 кВ</h1>
+      <p class="ep-lead">НПП «ЭСТРА» разрабатывает и производит микропроцессорные устройства релейной защиты и автоматики для сетей 6–35 кВ, дифференциальную защиту трансформаторов до 110 кВ, датчики тока и напряжения, блоки питания и шкафы РЗА. Разработкой устройств РЗА занимаемся с 1991 года. Производство находится в Новосибирске, продаем напрямую, без посредников.</p>
+      <div class="ep-btns">
+        <a class="ep-btn" href="https://rza-estra.ru/docs/oprosnye-listy/">Отправить опросный лист</a>
+        <a class="ep-btn ep-btn--outline" href="#form">Запросить стоимость</a>
+      </div>
+    </div>
+    <div class="ep-hero__media">
+      <div class="ep-photo" data-alt="Участок сборки устройств РЗА на производстве ЭСТРА в Новосибирске">
+        <strong>Фото: общий вид участка сборки</strong>
+        alt: Участок сборки устройств РЗА на производстве ЭСТРА в Новосибирске
+      </div>
+    </div>
+  </div>
+
+  <div class="ep-facts">
+    <div class="ep-fact"><span class="ep-fact__num">39</span><span class="ep-fact__text">наименований устройств собственной разработки и производства</span></div>
+    <div class="ep-fact"><span class="ep-fact__num">40 000+</span><span class="ep-fact__text">устройств в эксплуатации на объектах энергетики и промышленности</span></div>
+    <div class="ep-fact"><span class="ep-fact__num">10 лет</span><span class="ep-fact__text">гарантии на всю линейку</span></div>
+    <!-- ПРОВЕРИТЬ: на главной 10 дней, на /company/ встречаются и 10, и 7. Нужно одно значение и событие, от которого идет отсчет -->
+    <div class="ep-fact"><span class="ep-fact__num">10 дней</span><span class="ep-fact__text">средний срок отгрузки</span></div>
+    <!-- по выгрузке ГИСП на 05.11.2026; перед публикацией сверить -->
+    <div class="ep-fact"><span class="ep-fact__num">40</span><span class="ep-fact__text">изделий в реестре российской промышленной продукции Минпромторга</span></div>
+  </div>
+
+  <nav class="ep-nav" aria-label="Разделы страницы">
+    <a href="#produkciya">Продукция</a>
+    <a href="#etapy">Этапы производства</a>
+    <a href="#sroki">Сроки</a>
+    <a href="#garantiya">Гарантия</a>
+    <a href="#vybor">Выбор устройства</a>
+    <a href="#postavka">Поставка</a>
+    <a href="#reestry">Реестры</a>
+    <a href="#ploshchadka">Площадка</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+</section>
+
+<!-- БЛОК 2: навигатор продукции -->
+<section class="ep-section" id="produkciya">
+  <h2>Что мы производим</h2>
+  <p>Все устройства из таблицы разработаны в ЭСТРА и выпускаются на собственном производстве. Подробные характеристики, руководства по эксплуатации и опросные листы есть в карточках изделий.</p>
+  <div class="ep-table-wrap">
+    <table class="ep-table--nowrap-first">
+      <thead><tr><th>Группа</th><th>Изделия</th><th>Для чего</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Группа"><a href="/product/seriya-mkzp-mikro-2-0/">Терминалы серии МКЗП-МИКРО 2.0</a></td><td data-label="Изделия">14 модификаций: -1, -2, -3, -4, исполнения -Т, -ДШ, -ДЗ</td><td data-label="Для чего">Защита линий, ячеек, присоединений и электродвигателей. Одни посадочные размеры для всех устройств серии</td></tr>
+        <tr><td data-label="Группа"><a href="/product/byudzhetnoe-mikroprotsessornoe-ustroystvo-releynoy-zashchity-i-avtomatiki-estra-rele/">Серия ЭСТРА-РЕЛЕ</a></td><td data-label="Изделия">ЭСТРА-РЕЛЕ, ЭСТРА-РЕЛЕ.Д</td><td data-label="Для чего">Бюджетная микропроцессорная защита: 4 дискретных входа и 4 выхода</td></tr>
+        <tr><td data-label="Группа"><a href="/product/estra-iki/">Защитное реле ЭСТРА-ИКИ</a></td><td data-label="Изделия">ЭСТРА-ИКИ</td><td data-label="Для чего">Защита трансформаторов до 4 МВА в ячейках 6–10 кВ, питание от батареи</td></tr>
+        <tr><td data-label="Группа"><a href="/product/differentsialnaya-zashchita-prisoedineniy-6-220-kv/">Дифференциальная защита 6–110 кВ</a></td><td data-label="Изделия">ЭСТРА-ДЗТ, ЭСТРА-АРКТ, МК-ДЗТ</td><td data-label="Для чего">Дифференциальная защита трансформаторов, автоматический контроль и регулирование коэффициента трансформации</td></tr>
+        <tr><td data-label="Группа"><a href="/product/zashchita-generatorov-dlya-gpu-dgu-i-des/">Защита генераторов для ГПУ, ДГУ и ДЭС</a></td><td data-label="Изделия">ЭСТРА-ГИД</td><td data-label="Для чего">Защита генераторов мощностью до 30 МВт, работающих на сборные шины, и электродвигателей</td></tr>
+        <tr><td data-label="Группа"><a href="/product/ustroystva-zashchity-dlya-re-louzerov/">Устройства защиты для реклоузеров</a></td><td data-label="Изделия">ЭСТРА-ПС, МКЗП-ПС</td><td data-label="Для чего">Защита и автоматика реклоузеров и пунктов секционирования</td></tr>
+        <tr><td data-label="Группа"><a href="/product/datchiki-toka-i-napryazheniya/">Датчики тока и напряжения</a></td><td data-label="Изделия">ЭСТРАМЕТРИК, КДТН, ЭСТРА-ДТ, ЭСТРА-ДН, ФТНП</td><td data-label="Для чего">Измерительные каналы для микропроцессорных защит, в том числе в реклоузерах</td></tr>
+        <tr><td data-label="Группа"><a href="/product/dugovaya-zashchita/">Дуговая защита</a></td><td data-label="Изделия">МИКО-ДЗ</td><td data-label="Для чего">Защита от коротких замыканий с горением дуги в ячейках</td></tr>
+        <tr><td data-label="Группа"><a href="/product/tsentralizovannaya-zashchita-ot-zamykaniy-na-zemlyu-ozz-serii-mkzzp-6-35/">Защита от ОЗЗ</a></td><td data-label="Изделия">МКЗЗП-6-35-И, МКЗЗП-6-35-К</td><td data-label="Для чего">Централизованная защита от однофазных замыканий на землю в сетях 6–35 кВ</td></tr>
+        <tr><td data-label="Группа"><a href="/product/zashchita-elektrodvigatelya-i-stantsionnogo-oborudovaniya/">Защита электродвигателей и станционного оборудования</a></td><td data-label="Изделия">МКЗиД-0,4, МК-РЗР, МК-РЗГ</td><td data-label="Для чего">Защита двигателей и станционного оборудования</td></tr>
+        <tr><td data-label="Группа"><a href="/product/bloki-pitaniya/">Блоки питания и накопители энергии</a></td><td data-label="Изделия">БПТ-01, БПТ-ДШ, ЭСТРА-БК, ЭСТРА-БПК, ЭСТРА-ИПР</td><td data-label="Для чего">Питание защит и приводов при отсутствии гарантированного оперативного тока</td></tr>
+        <tr><td data-label="Группа"><a href="/product/shkafy-rza/">Шкафы РЗА</a></td><td data-label="Изделия">ЭСТРА-ШЗТ-221, шкаф комбинированный 6–35 кВ, шкаф ДЗТ и АУВ, ШЗЗП</td><td data-label="Для чего">Шкафы релейной защиты</td></tr>
+        <tr><td data-label="Группа"><a href="/product/programmnoe-obespechenie-i-servisnoe-oborudovanie/">Программное обеспечение и сервисное оборудование</a></td><td data-label="Изделия">Uprog, Oscillo, ЭСТРА-РОУТЕР, ЭСТРА-МОДЕМ</td><td data-label="Для чего">Настройка устройств, просмотр осциллограмм, передача данных в SCADA</td></tr>
+        <tr><td data-label="Группа"><a href="/product/kompleksnye-resheniya/">Комплексные решения</a></td><td data-label="Изделия">Ретрофит ячеек КСО и КРУ</td><td data-label="Для чего">Замена электромеханических реле на микропроцессорные терминалы в действующих ячейках</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- БЛОК 2а: тезис. Слова проявляются при прокрутке; без скрипта текст виден сразу. Текст собран из фактов страницы -->
+<section class="ep-section ep-tagline" id="tezis" aria-label="Главное об ЭСТРА">
+  <p class="ep-tagline__text">
+    <span class="ep-tagline__line">Разработчики и производство работают в одной компании.</span>
+    <span class="ep-tagline__line">Поэтому устройство, программа настройки и схема привязки приходят от одного поставщика, а гарантия на всю линейку десять лет.</span>
+  </p>
+</section>
+
+<!-- БЛОК 3: путь устройства -->
+<section class="ep-section" id="etapy">
+  <h2>Как устройство РЗА проходит производство: от заявки до отгрузки</h2>
+  <p>Ниже путь одного заказа. Время указано там, где оно известно и не зависит от объема партии.</p>
+  <ol class="ep-steps">
+    <li>
+      <span class="ep-step__title">Заявка и подбор</span>
+      <span class="ep-step__time">в среднем 15 минут</span>
+      <p>Вы присылаете опросный лист или вопрос. На вопрос, счет или договор реагируем в среднем за 15 минут. Инженер подбирает модификацию под ячейку, схему и род оперативного тока; помощь в подборе бесплатная.</p>
+      <div class="ep-photo" data-alt="Инженер ЭСТРА подбирает модификацию терминала РЗА по опросному листу"><strong>Фото: инженер с опросным листом и схемой ячейки</strong>alt: Инженер ЭСТРА подбирает модификацию терминала РЗА по опросному листу</div>
+    </li>
+    <li>
+      <span class="ep-step__title">Схема привязки</span>
+      <span class="ep-step__time">от 2 до 20 часов, в среднем 12</span>
+      <p>Если для КСО, КРУ, ЯКНО или реклоузера нужна нетиповая схема привязки, ее разработка занимает от 2 до 20 часов в зависимости от сложности, в среднем 12 часов.</p>
+    </li>
+    <li>
+      <span class="ep-step__title">Монтаж печатных плат</span>
+      <p><span class="ep-ph">где монтируются платы (собственный участок поверхностного монтажа или контрактный монтаж), какое оборудование, какой контроль после монтажа</span></p>
+      <div class="ep-photo" data-alt="Монтаж печатных плат устройств РЗА"><strong>Фото: монтаж печатных плат</strong>alt: Монтаж печатных плат устройств РЗА</div>
+    </li>
+    <li>
+      <span class="ep-step__title">Намотка</span>
+      <p>Датчики тока ЭСТРА-ДТ и комбинированные датчики тока и напряжения КДТН наматываем на собственном участке. В 2021 году мощность намоточного производства увеличилась.</p>
+      <div class="ep-photo" data-alt="Намотка датчиков тока ЭСТРА-ДТ на производстве ЭСТРА"><strong>Фото: намоточный участок</strong>alt: Намотка датчиков тока ЭСТРА-ДТ на производстве ЭСТРА</div>
+    </li>
+    <li>
+      <span class="ep-step__title">Сборка</span>
+      <p><span class="ep-ph">сборка в корпус, загрузка встроенного ПО, калибровка измерительных каналов: что выполняется, на каком оборудовании; когда присваивается серийный номер</span></p>
+      <div class="ep-photo" data-alt="Сборка терминала МКЗП-МИКРО 2.0"><strong>Фото: сборка терминала МКЗП-МИКРО 2.0</strong>alt: Сборка терминала МКЗП-МИКРО 2.0</div>
+    </li>
+    <li>
+      <span class="ep-step__title">Испытания</span>
+      <p>Проверки перечислены в <a href="#ispytaniya">блоке ниже</a>. <span class="ep-ph">подтвердить, что приемо-сдаточные испытания проходит каждое изделие, а не выборка</span></p>
+      <div class="ep-photo" data-alt="Проверка срабатывания защит на испытательном стенде"><strong>Фото: испытательный стенд</strong>alt: Проверка срабатывания защит на испытательном стенде</div>
+    </li>
+    <li>
+      <span class="ep-step__title">Упаковка и документы</span>
+      <p><span class="ep-ph">что входит в комплект поставки: паспорт, руководство по эксплуатации, протокол испытаний, карта уставок</span></p>
+    </li>
+    <li>
+      <span class="ep-step__title">Отгрузка</span>
+      <span class="ep-step__time">в среднем 10 дней</span>
+      <p>Средний срок отгрузки 10 дней. При необходимости ключевые позиции можно зарезервировать заранее. <span class="ep-ph">от какого события считается срок: оплата, подписание договора или согласование опросного листа</span></p>
+    </li>
+  </ol>
+</section>
+
+<!-- БЛОК 4: испытания. Публикуется только после ответа клиента -->
+<section class="ep-section ep-hold" id="ispytaniya">
+  <span class="ep-hold-label">Блок ждет ответов клиента</span>
+  <h2>Какие испытания проходит каждое устройство</h2>
+  <p><span class="ep-ph">вводный абзац в 2–3 предложения: кто принимает изделия (ОТК, инженер-наладчик), по какому документу (программа и методика испытаний, ТУ), хранится ли протокол по серийному номеру</span></p>
+  <!-- строки таблицы: предложенный перечень; клиент вычеркивает лишнее и дописывает свое -->
+  <div class="ep-table-wrap">
+    <table class="ep-table--nowrap-first">
+      <thead><tr><th>Проверка</th><th>Что проверяем</th><th>Объем</th><th>Режим, норма</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Проверка">Входной контроль комплектующих</td><td data-label="Что проверяем"><span class="ep-ph">что проверяется</span></td><td data-label="Объем"><span class="ep-ph">каждая партия или выборка</span></td><td data-label="Режим, норма"><span class="ep-ph">режим</span></td></tr>
+        <tr><td data-label="Проверка">Контроль плат после монтажа</td><td data-label="Что проверяем"><span class="ep-ph">визуальный, автоматическая оптическая инспекция, электрический</span></td><td data-label="Объем"><span class="ep-ph">объем</span></td><td data-label="Режим, норма"><span class="ep-ph">режим</span></td></tr>
+        <tr><td data-label="Проверка">Функциональная проверка защит</td><td data-label="Что проверяем"><span class="ep-ph">срабатывание защит при подаче токов и напряжений?</span></td><td data-label="Объем"><span class="ep-ph">объем</span></td><td data-label="Режим, норма"><span class="ep-ph">стенд, уставки, допуск</span></td></tr>
+        <tr><td data-label="Проверка">Точность измерительных каналов</td><td data-label="Что проверяем"><span class="ep-ph">что проверяется</span></td><td data-label="Объем"><span class="ep-ph">объем</span></td><td data-label="Режим, норма"><span class="ep-ph">погрешность, %</span></td></tr>
+        <tr><td data-label="Проверка">Дискретные входы и выходы, интерфейсы</td><td data-label="Что проверяем"><span class="ep-ph">что проверяется</span></td><td data-label="Объем"><span class="ep-ph">объем</span></td><td data-label="Режим, норма"><span class="ep-ph">режим</span></td></tr>
+        <tr><td data-label="Проверка">Прогон (термотренировка)</td><td data-label="Что проверяем"><span class="ep-ph">что проверяется</span></td><td data-label="Объем"><span class="ep-ph">объем</span></td><td data-label="Режим, норма"><span class="ep-ph">часов, температура</span></td></tr>
+        <tr><td data-label="Проверка">Типовые испытания серии: климат, ЭМС</td><td data-label="Что проверяем"><span class="ep-ph">что проверяется</span></td><td data-label="Объем">Типовые, не для каждого изделия</td><td data-label="Режим, норма"><span class="ep-ph">диапазон температур, стандарт и степень жесткости ЭМС, кто проводил</span></td></tr>
+        <tr><td data-label="Проверка">Утверждение типа средств измерений</td><td data-label="Что проверяем">Датчики тока ЭСТРА-ДТ и напряжения ЭСТРА-ДН внесены в Государственный реестр средств измерений</td><td data-label="Объем">Тип изделия</td><td data-label="Режим, норма"><span class="ep-ph">номер в Госреестре СИ, срок действия свидетельства</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ep-cond">
+    <p><strong>Проверка в вашей лаборатории.</strong> Блок защиты можно протестировать на базе вашей лаборатории до закупки: так вы на практике проверите функции и поведение устройства. Заявку на тестирование отправьте на <span class="ep-ph">адрес почты для заявок; в новости 2015 года был office@rza-estra.ru</span>.</p>
+  </div>
+</section>
+
+<!-- БЛОК 5: сроки -->
+<section class="ep-section" id="sroki">
+  <h2>Сроки производства и поставки</h2>
+  <p>Сроки посчитаны для типовых заказов. Условие указано в той же строке, что и срок.</p>
+  <div class="ep-table-wrap">
+    <table class="ep-table--nowrap-first">
+      <thead><tr><th>Что</th><th>Срок</th><th>Условие</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Что">Реакция на вопрос, счет или договор</td><td data-label="Срок" class="ep-num">в среднем 15 минут</td><td data-label="Условие"><span class="ep-ph">в рабочее время или круглосуточно</span></td></tr>
+        <tr><td data-label="Что">Нетиповая схема привязки для КСО, КРУ, ЯКНО, реклоузера</td><td data-label="Срок" class="ep-num">от 2 до 20 часов,<br>в среднем 12 часов</td><td data-label="Условие">Зависит от сложности схемы</td></tr>
+        <tr><td data-label="Что">Отгрузка</td><td data-label="Срок" class="ep-num">в среднем 10 дней</td><td data-label="Условие"><span class="ep-ph">точка отсчета; для каких изделий; срок для нестандартной комплектации</span></td></tr>
+        <!-- ПРОВЕРИТЬ: «бесплатная» есть только на странице ретрофита; распространяется ли на все поставки -->
+        <tr><td data-label="Что">Замена устройства и отгрузка при нештатной ситуации</td><td data-label="Срок" class="ep-num">не более 24 часов</td><td data-label="Условие">Оперативная замена до выяснения причин</td></tr>
+        <!-- ПРОВЕРИТЬ: на главной «в течение 12 часов», на /company/ «максимальное время выезда 24 часа» -->
+        <tr><td data-label="Что">Выезд специалиста на объект</td><td data-label="Срок" class="ep-num"><span class="ep-ph">единое значение</span></td><td data-label="Условие">&nbsp;</td></tr>
+        <tr><td data-label="Что">Серийные поставки для производителей ячеек</td><td data-label="Срок" class="ep-num"><span class="ep-ph">срок для партии, минимальная партия</span></td><td data-label="Условие"><span class="ep-ph">условие</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:20px">Ключевые позиции можно зарезервировать заранее, если поставка привязана к графику строительства или выпуска ячеек. <span class="ep-ph">что держите на складе готовых изделий или в заделе, чтобы выдерживать средний срок 10 дней</span></p>
+</section>
+
+<!-- БЛОК 6: разработка и производство -->
+<section class="ep-section" id="razrabotka">
+  <div class="ep-split">
+    <div>
+      <h2>Разработка и производство в одной компании</h2>
+      <p>ЭСТРА выросла из одного кабинета кафедры электрических станций НГТУ (НЭТИ): устройства РЗА здесь разрабатывают с 1991 года. Разработчики и производство работают в одной компании, поэтому заказчик получает от одного поставщика устройство, его встроенное ПО, программу настройки и схему привязки.</p>
+      <p>Что это дает на практике:</p>
+      <ul class="ep-list">
+        <!-- ПРОВЕРИТЬ: патенты: на /company/ «более 10», в разделе сертификатов показано 5; если клиент даст число, добавить сюда строкой -->
+        <li><strong>Новые модификации каждый год.</strong> Мы выпускаем более 5 разработок или новых модификаций в год. Часть специалистов имеет ученую степень кандидата технических наук.</li>
+        <li><strong>Одни посадочные размеры.</strong> У всех устройств серии МКЗП-МИКРО 2.0 одни посадочные размеры. <span class="ep-ph">подтвердить, что при смене модификации не нужна доработка двери релейного отсека; если да, дописать это</span></li>
+        <li><strong>Свое программное обеспечение.</strong> Программа настройки Uprog внесена в реестр российского ПО и работает в Astra Linux; прошивка серии МКЗП-МИКРО 2.0 внесена в реестр Минцифры.</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="ep-timeline" aria-label="Основные вехи">
+        <li class="ep-timeline__title">Основные вехи</li>
+        <li><b>1991</b>Начало разработки устройств РЗА на кафедре электрических станций НГТУ (НЭТИ).</li>
+        <li><b>2001</b>Микропроцессорные блоки защиты электродвигателей 6 кВ производства ЭСТРА введены в работу на Новосибирской ТЭЦ-5.</li>
+        <li><b>2013</b>Запуск в серийное производство защиты присоединений 6–35 кВ МКЗП-1.1 и дифференциальных защит МК-ДЗТ-2, МК-ДЗТ-3.</li>
+        <li><b>2014</b>Серийный выпуск защиты присоединений 6–35 кВ МКЗП-МИКРО.</li>
+        <li><b>2021</b>Новая производственная площадка расширила технологический процесс на 750 м². Серийный выпуск ЭСТРА-РЕЛЕ.</li>
+        <li><b>2022</b>Запуск серии МКЗП-МИКРО 2.0. Датчики ЭСТРА-ДТ и ЭСТРА-ДН внесены в Госреестр средств измерений.</li>
+        <li><b>2023</b>14 модификаций МКЗП-МИКРО 2.0 в серийном производстве, начат серийный выпуск ЭСТРА-ПС для реклоузеров.</li>
+        <li><b>2025</b>Новое устройство дифференциальной защиты ЭСТРА-ДЗТ. Первые изделия включены в реестр российской промышленной продукции Минпромторга.</li>
+        <li><b>2026</b>Устройство защиты генераторов и электродвигателей ЭСТРА-ГИД.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- БЛОК 7: гарантия, ресурс, ремонт -->
+<section class="ep-section" id="garantiya">
+  <h2>Гарантия, ресурс и ремонт</h2>
+  <div class="ep-cards">
+    <div class="ep-card"><span class="ep-card__title">Гарантия 10 лет</span><p>На всю линейку устройств. Условия гарантии прописаны в договоре. <span class="ep-ph">с какого момента считается срок: отгрузка или ввод в эксплуатацию; что не покрывается</span></p></div>
+    <div class="ep-card"><span class="ep-card__title">Срок службы</span><p><span class="ep-ph">назначенный срок службы по сериям, лет; документ, где он записан</span> <span class="ep-ph">наработка на отказ, часов, для каких изделий</span></p></div>
+    <div class="ep-card"><span class="ep-card__title">Ремонт</span><p>В течение гарантийного срока устройство ремонтирует завод-изготовитель. <span class="ep-ph">подтвердить порядок; срок ремонта; послегарантийный ремонт и ЗИП</span></p></div>
+    <div class="ep-card"><span class="ep-card__title">Поддержка</span><p>Круглосуточная техническая поддержка, бесплатный номер техподдержки <a href="tel:+78003332083">+7 (800) 333-20-83</a>, собственный сервисный центр. Обучаем персонал заказчика онлайн, на выезде или на базе ЭСТРА.</p></div>
+  </div>
+  <div class="ep-case">
+    <p style="margin:0"><strong>Как это работает на объекте.</strong> Блоки защиты электродвигателей 6 кВ, произведенные в 2001 году, работали на дробилке Новосибирской ТЭЦ-5. В 2014 году, когда их вывели на плановое обслуживание при реконструкции ячейки, за 13 лет эксплуатации не было зарегистрировано ни неселективных срабатываний, ни отказов.</p>
+  </div>
+</section>
+
+<!-- БЛОК 8: для производителей ячеек и реклоузеров -->
+<section class="ep-section" id="oem">
+  <h2>Для производителей КРУ, КСО и реклоузеров</h2>
+  <p>Если вы выпускаете ячейки или реклоузеры, ЭСТРА поставляет РЗА в комплект вашего изделия.</p>
+  <ul class="ep-list">
+    <li><strong>Для реклоузеров и пунктов секционирования:</strong> устройство защиты ЭСТРА-ПС, датчики тока и напряжения, источник питания ЭСТРА-ИПР. Устройство ЭСТРА-ПС и датчики включены в реестр российской промышленной продукции.</li>
+    <li><strong>Для ячеек КСО, КРУ и ЯКНО:</strong> терминалы МКЗП-МИКРО 2.0 с одними посадочными размерами для всей серии, нетиповая схема привязки от 2 до 20 часов.</li>
+    <li><strong>Для конструкторов:</strong> <a href="/docs/3d-modeli/">3D-модели</a>, <a href="/docs/montazhnye-skhemy/">монтажные схемы</a> и <a href="/docs/rukovodstvo-po-ekspluatatsii/">руководства по эксплуатации</a> на сайте.</li>
+    <li><strong>Партии.</strong> <span class="ep-ph">минимальная партия, срок для серийных поставок, фиксация цены на период выпуска</span></li>
+  </ul>
+  <div class="ep-btns">
+    <a class="ep-btn ep-btn--outline" href="/docs/3d-modeli/">3D-модели</a>
+    <a class="ep-btn ep-btn--outline" href="/docs/montazhnye-skhemy/">Монтажные схемы</a>
+    <a class="ep-btn ep-btn--outline" href="/docs/rukovodstvo-po-ekspluatatsii/">Руководства по эксплуатации</a>
+  </div>
+</section>
+
+<!-- БЛОК 9: матрица выбора -->
+<section class="ep-section" id="vybor">
+  <h2>Какое устройство выбрать под задачу</h2>
+  <div class="ep-table-wrap">
+    <table class="ep-table--nowrap-first">
+      <thead><tr><th>Ваша задача</th><th>Что предлагаем</th><th>На что смотреть при выборе</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Ваша задача">Защита присоединений нового РП или ТП 6–10 кВ</td><td data-label="Что предлагаем"><a href="/product/seriya-mkzp-mikro-2-0/">МКЗП-МИКРО 2.0</a></td><td data-label="На что смотреть при выборе">Число дискретных входов и выходов, наличие гарантированного оперативного тока</td></tr>
+        <tr><td data-label="Ваша задача">Схема без гарантированного оперативного тока</td><td data-label="Что предлагаем">МКЗП-МИКРО 2.0 в исполнении -Т, <a href="/product/bloki-pitaniya/">блоки питания</a></td><td data-label="На что смотреть при выборе">Питание от токовых цепей; дешунтирование для приводов с токовыми катушками (исполнение -ДШ)</td></tr>
+        <tr><td data-label="Ваша задача">Бюджетная защита присоединения</td><td data-label="Что предлагаем"><a href="/product/byudzhetnoe-mikroprotsessornoe-ustroystvo-releynoy-zashchity-i-avtomatiki-estra-rele/">ЭСТРА-РЕЛЕ</a></td><td data-label="На что смотреть при выборе">4 дискретных входа и 4 выхода</td></tr>
+        <tr><td data-label="Ваша задача">Защита трансформатора до 4 МВА в ячейке 6–10 кВ</td><td data-label="Что предлагаем"><a href="/product/estra-iki/">ЭСТРА-ИКИ</a></td><td data-label="На что смотреть при выборе">Питание от батареи</td></tr>
+        <tr><td data-label="Ваша задача">Дифференциальная защита трансформатора</td><td data-label="Что предлагаем"><a href="/product/differentsialnaya-zashchita-prisoedineniy-6-220-kv/estra-dzt/">ЭСТРА-ДЗТ</a></td><td data-label="На что смотреть при выборе">Схема и группа соединения обмоток</td></tr>
+        <tr><td data-label="Ваша задача">Реклоузер, пункт секционирования</td><td data-label="Что предлагаем"><a href="/product/ustroystva-zashchity-dlya-re-louzerov/estra-ps/">ЭСТРА-ПС</a></td><td data-label="На что смотреть при выборе">Тип датчиков тока и напряжения, протокол телемеханики</td></tr>
+        <tr><td data-label="Ваша задача">Генератор ГПУ, ДГУ, ДЭС до 30 МВт</td><td data-label="Что предлагаем"><a href="/product/zashchita-generatorov-dlya-gpu-dgu-i-des/estra-gid/">ЭСТРА-ГИД</a></td><td data-label="На что смотреть при выборе">Работа на сборные шины</td></tr>
+        <tr><td data-label="Ваша задача">Замена электромеханических реле в действующих ячейках</td><td data-label="Что предлагаем"><a href="/product/kompleksnye-resheniya/retrofit-yacheek-kso-kru/">Ретрофит ячеек КСО и КРУ</a></td><td data-label="На что смотреть при выборе">Тип ячейки и выключателя; ячейки меняем по одной, остальные присоединения остаются в работе</td></tr>
+        <tr><td data-label="Ваша задача">Однофазные замыкания на землю</td><td data-label="Что предлагаем"><a href="/product/tsentralizovannaya-zashchita-ot-zamykaniy-na-zemlyu-ozz-serii-mkzzp-6-35/">МКЗЗП-6-35</a></td><td data-label="На что смотреть при выборе">Режим заземления нейтрали</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- БЛОК 10: продажа и поставка + коды для закупки -->
+<section class="ep-section" id="postavka">
+  <h2>Поставка электротехнического оборудования напрямую от производителя</h2>
+  <p>Купить устройства РЗА можно без посредников: счет, договор и отгрузку оформляет сам производитель.</p>
+  <ol class="ep-flow">
+    <li>Отправьте <a href="/docs/oprosnye-listy/">опросный лист</a> или вопрос.</li>
+    <li>Получите ответ: на вопрос, счет или договор реагируем в среднем за 15 минут.</li>
+    <li>Подпишите договор: условия гарантии прописаны в нем.</li>
+    <li>Получите отгрузку: в среднем через 10 дней.</li>
+  </ol>
+  <p><strong>Комплексные поставки.</strong> Кроме отдельных устройств, поставляем шкафы РЗА и комплекты для ретрофита: терминалы, комплекты адаптации под тип ячейки и выкатные элементы в заводской готовности к монтажу. Монтаж выполняем своими силами или проводим шеф-монтаж, пусконаладку берем на себя или проводим шеф-наладку. По России реализовано более 1000 проектов.</p>
+
+  <h3 id="kody">Коды для закупки</h3>
+  <p>Коды по данным ГИСП. Номера заключений о российском производстве приведены в <a href="#reestry">следующем блоке</a>.</p>
+  <div class="ep-table-wrap">
+    <table class="ep-table--nowrap-first">
+      <thead><tr><th>Группа изделий</th><th>ОКПД 2</th><th>ТН ВЭД</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Группа изделий">Терминалы и устройства защиты: МКЗП-МИКРО 2.0, ЭСТРА-ПС, МКЗП-ПС 2.0, ЭСТРА-ДЗТ, ЭСТРА-АРКТ, МИКО-ДЗ, МК-РЗР, МК-РЗГ</td><td data-label="ОКПД 2" class="ep-num">27.12.31.000</td><td data-label="ТН ВЭД" class="ep-num">8537 10 980 0</td></tr>
+        <tr><td data-label="Группа изделий">ЭСТРА-РЕЛЕ, ЭСТРА-РЕЛЕ.Д</td><td data-label="ОКПД 2"><span class="ep-ph">по ТУ 2021 в ГИСП 27.12.31; по ТУ 2026 27.12.24.190; какой код действует для выпускаемых изделий</span></td><td data-label="ТН ВЭД"><span class="ep-ph">8537 10 910 0 или 8536 49 000 0</span></td></tr>
+        <tr><td data-label="Группа изделий">Датчики тока и напряжения: КДТН, ЭСТРА-ДТ, ЭСТРА-ФТНП, ЭСТРАМЕТРИК</td><td data-label="ОКПД 2" class="ep-num">26.51.43</td><td data-label="ТН ВЭД" class="ep-num">9030 33 990 0</td></tr>
+        <tr><td data-label="Группа изделий">Датчик напряжения ЭСТРА-ДН-01</td><td data-label="ОКПД 2" class="ep-num">27.12.31</td><td data-label="ТН ВЭД"><span class="ep-ph">полный код; в ГИСП указано только 8537 10</span></td></tr>
+        <tr><td data-label="Группа изделий">Блоки питания ЭСТРА-БК, ЭСТРА-БПК, ЭСТРА-ИПР</td><td data-label="ОКПД 2" class="ep-num">27.11.50</td><td data-label="ТН ВЭД" class="ep-num">8504 40 910 0</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- БЛОК 11: реестры и документы -->
+<section class="ep-section" id="reestry">
+  <h2>Реестры и документы</h2>
+  <div class="ep-seals">
+    <a class="ep-seal" href="https://gisp.gov.ru/company-catalog/company/20077696" target="_blank" rel="noopener" title="Минпромторг России: изделия ЭСТРА в реестре российской промышленной продукции"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Минпромторг России: изделия ЭСТРА в реестре российской промышленной продукции" viewBox="0 0 416 200" fill="none">
+<path d="M126.785 141.895V132.753H130.71C131.701 132.753 132.479 132.953 133.044 133.354C133.609 133.754 133.891 134.338 133.891 135.104C133.891 135.853 133.622 136.427 133.083 136.828C132.544 137.22 131.836 137.416 130.958 137.416L131.192 137.024C132.209 137.024 132.987 137.228 133.526 137.638C134.074 138.038 134.348 138.626 134.348 139.401C134.348 140.185 134.061 140.798 133.487 141.242C132.922 141.678 132.079 141.895 130.958 141.895H126.785ZM128.076 140.864H130.932C131.627 140.864 132.148 140.737 132.496 140.485C132.853 140.224 133.031 139.828 133.031 139.296C133.031 138.765 132.853 138.378 132.496 138.134C132.148 137.89 131.627 137.768 130.932 137.768H128.076V140.864ZM128.076 136.776H130.619C131.253 136.776 131.736 136.649 132.066 136.397C132.405 136.144 132.574 135.774 132.574 135.287C132.574 134.79 132.405 134.416 132.066 134.163C131.736 133.911 131.253 133.785 130.619 133.785H128.076V136.776Z" fill="#00549F"/>
+<path d="M140.028 141.895V132.753H143.587C144.387 132.753 145.069 132.879 145.634 133.132C146.199 133.384 146.634 133.75 146.938 134.229C147.243 134.708 147.395 135.278 147.395 135.94C147.395 136.601 147.243 137.172 146.938 137.651C146.634 138.121 146.199 138.487 145.634 138.748C145.069 139 144.387 139.127 143.587 139.127H140.745L141.332 138.513V141.895H140.028ZM141.332 138.643L140.745 137.99H143.548C144.383 137.99 145.013 137.812 145.439 137.455C145.873 137.098 146.091 136.593 146.091 135.94C146.091 135.287 145.873 134.782 145.439 134.425C145.013 134.068 144.383 133.889 143.548 133.889H140.745L141.332 133.236V138.643Z" fill="#00549F"/>
+<path d="M150.395 136.697H155.089V137.807H150.395V136.697ZM150.512 140.759H155.832V141.895H149.208V132.753H155.65V133.889H150.512V140.759Z" fill="#00549F"/>
+<path d="M159.066 136.697H163.76V137.807H159.066V136.697ZM159.184 140.759H164.503V141.895H157.88V132.753H164.321V133.889H159.184V140.759Z" fill="#00549F"/>
+<path d="M170.619 142C169.924 142 169.281 141.887 168.69 141.66C168.107 141.425 167.599 141.099 167.164 140.681C166.738 140.254 166.404 139.758 166.16 139.192C165.917 138.626 165.795 138.003 165.795 137.324C165.795 136.645 165.917 136.022 166.16 135.456C166.404 134.89 166.743 134.399 167.177 133.981C167.612 133.554 168.12 133.227 168.703 133.001C169.294 132.766 169.937 132.648 170.632 132.648C171.337 132.648 171.984 132.77 172.575 133.014C173.175 133.249 173.684 133.602 174.101 134.072L173.253 134.895C172.906 134.529 172.514 134.259 172.08 134.085C171.645 133.902 171.18 133.811 170.685 133.811C170.172 133.811 169.694 133.898 169.25 134.072C168.816 134.246 168.438 134.49 168.116 134.803C167.794 135.117 167.542 135.491 167.36 135.927C167.186 136.353 167.099 136.819 167.099 137.324C167.099 137.829 167.186 138.299 167.36 138.735C167.542 139.161 167.794 139.531 168.116 139.845C168.438 140.158 168.816 140.402 169.25 140.576C169.694 140.75 170.172 140.838 170.685 140.838C171.18 140.838 171.645 140.75 172.08 140.576C172.514 140.393 172.906 140.115 173.253 139.74L174.101 140.563C173.684 141.033 173.175 141.39 172.575 141.634C171.984 141.878 171.332 142 170.619 142Z" fill="#00549F"/>
+<path d="M177.66 141.895V133.55L177.986 133.889H174.544V132.753H182.067V133.889H178.625L178.938 133.55V141.895H177.66Z" fill="#00549F"/>
+<path d="M183.652 141.895V132.753H187.211C188.011 132.753 188.693 132.879 189.258 133.132C189.823 133.384 190.258 133.75 190.562 134.229C190.867 134.708 191.019 135.278 191.019 135.94C191.019 136.601 190.867 137.172 190.562 137.651C190.258 138.121 189.823 138.487 189.258 138.748C188.693 139 188.011 139.127 187.211 139.127H184.369L184.956 138.513V141.895H183.652ZM184.956 138.643L184.369 137.99H187.172C188.007 137.99 188.637 137.812 189.063 137.455C189.497 137.098 189.715 136.593 189.715 135.94C189.715 135.287 189.497 134.782 189.063 134.425C188.637 134.068 188.007 133.889 187.172 133.889H184.369L184.956 133.236V138.643Z" fill="#00549F"/>
+<path d="M194.019 136.697H198.713V137.807H194.019V136.697ZM194.136 140.759H199.456V141.895H192.832V132.753H199.274V133.889H194.136V140.759Z" fill="#00549F"/>
+<path d="M105.689 96.9157H79.2889C78.5546 97.0263 77.8385 97.2658 77.1593 97.6713C76.3882 98.1135 75.764 98.7032 75.2683 99.3851L69.9258 108.673H112.427L105.671 96.9157H105.689Z" fill="#00549F"/>
+<path d="M90.8767 93.2112C91.6662 93.6719 92.529 93.9299 93.3919 94.0036H104.003L82.7069 57L75.9141 68.794L88.8572 91.3131C89.3713 92.0687 90.0322 92.7136 90.8584 93.2112H90.8767Z" fill="#00549F"/>
+<path d="M80.1347 83.4995C80.1347 82.5781 79.9328 81.6936 79.5656 80.9012L74.2782 71.7056L53 108.672H66.5857L79.4371 86.319C79.8777 85.4713 80.1347 84.5131 80.1347 83.4811V83.4995Z" fill="#00549F"/>
+<path d="M142.926 81.2516C142.926 80.7171 143.33 63.192 143.33 63.192L138.575 81.2516H134.885L130.13 63.192C130.13 63.192 130.534 80.5329 130.534 81.2516H126.531V59.2668H132.48L136.757 75.5757L140.98 59.2668H146.891V81.2516H142.889H142.926Z" fill="#00549F"/>
+<path d="M169.84 81.2516H165.745V66.8776L155.942 78.6348V81.2516H151.848V59.2668H155.942V73.5302L165.745 61.7546V59.2668H169.84V81.2516Z" fill="#00549F"/>
+<path d="M188.328 81.2518V71.2638H178.928V81.2702H174.797V59.2671H178.928V67.5413H188.328V59.2671H192.458V81.2518H188.328Z" fill="#00549F"/>
+<path d="M214.782 59.2668V81.2516H210.688V63.0077H201.508V81.2516H197.414V59.2668H214.782Z" fill="#00549F"/>
+<path d="M228.293 59.2668C232.81 59.2668 236.077 62.0679 236.077 66.5828C236.077 70.5633 233.783 73.7698 228.073 73.7698H223.887V81.2516H219.793V59.2668H228.293ZM223.887 70.4158H227.485C230.405 70.4158 231.855 69.0337 231.855 66.4538C231.855 62.9156 229.009 62.7866 227.008 62.7866H223.869V70.4158H223.887Z" fill="#00549F"/>
+<path d="M248.637 58.7139C255.301 58.7139 259.12 64.187 259.12 70.1393C259.12 75.1333 256.421 81.8227 248.545 81.8227C242.101 81.8227 238.117 76.4785 238.117 70.3051C238.117 64.1317 242.303 58.7323 248.637 58.7323V58.7139ZM248.655 77.9896C251.905 77.9896 254.989 75.465 254.989 70.4894C254.989 66.5642 252.951 62.4916 248.6 62.4916C245.002 62.4916 242.34 65.3296 242.34 70.1577C242.34 73.5853 243.974 78.0081 248.674 78.0081L248.655 77.9896Z" fill="#00549F"/>
+<path d="M279.28 81.2518C279.28 80.7174 279.684 63.1923 279.684 63.1923L274.947 81.2518H271.257L266.52 63.1923C266.52 63.1923 266.924 80.5331 266.924 81.2518H262.922V59.2671H268.87L273.148 75.5759L277.37 59.2671H283.3V81.2518H279.298H279.28Z" fill="#00549F"/>
+<path d="M296.463 62.9709V81.2516H292.369V62.9709H286.402V59.2668H302.503V62.9709H296.463Z" fill="#00549F"/>
+<path d="M315.153 58.7138C321.817 58.7138 325.636 64.1869 325.636 70.1392C325.636 75.1332 322.937 81.8226 315.061 81.8226C308.617 81.8226 304.633 76.4785 304.633 70.3051C304.633 64.1317 308.819 58.7322 315.153 58.7322V58.7138ZM315.189 77.9896C318.439 77.9896 321.523 75.4649 321.523 70.4894C321.523 66.5642 319.485 62.4916 315.134 62.4916C311.536 62.4916 308.874 65.3295 308.874 70.1576C308.874 73.5853 310.508 78.008 315.208 78.008L315.189 77.9896Z" fill="#00549F"/>
+<path d="M338.102 59.2668C342.636 59.2668 345.886 62.0679 345.886 66.5828C345.886 70.5633 343.591 73.7698 337.882 73.7698H333.696V81.2516H329.602V59.2668H338.102ZM333.696 70.4158H337.294C340.213 70.4158 341.663 69.0337 341.663 66.4538C341.663 62.9156 338.818 62.7866 336.817 62.7866H333.677V70.4158H333.696Z" fill="#00549F"/>
+<path d="M362.02 59.2671V63.008H353.024V81.2518H348.93V59.2671H362.02Z" fill="#00549F"/>
+<path d="M135.051 86.6885C139.586 86.6885 142.835 89.4896 142.835 94.0045C142.835 97.985 140.54 101.191 134.831 101.191H130.645V108.673H126.551V86.6885H135.051ZM130.645 97.8375H134.243C137.162 97.8375 138.613 96.4739 138.613 93.8755C138.613 90.3189 135.749 90.2083 133.766 90.2083H130.626V97.8375H130.645Z" fill="#00549F"/>
+<path d="M155.392 86.1355C162.056 86.1355 165.875 91.6271 165.875 97.5609C165.875 102.555 163.176 109.244 155.3 109.244C148.856 109.244 144.891 103.882 144.891 97.7268C144.891 91.5718 149.076 86.1355 155.41 86.1355H155.392ZM155.429 105.411C158.678 105.411 161.744 102.887 161.744 97.911C161.744 93.9859 159.706 89.9133 155.355 89.9133C151.757 89.9133 149.095 92.7512 149.095 97.5609C149.095 100.989 150.747 105.411 155.429 105.411Z" fill="#00549F"/>
+<path d="M188.145 102.536C187.429 104.416 184.987 109.226 178.69 109.226C173.512 109.226 168.445 105.687 168.445 97.4501C168.445 92.5667 171.199 86.1168 178.837 86.1168C184.491 86.1168 186.804 89.7656 187.741 92.8984L183.665 93.9672C183.408 91.5715 181.407 89.8946 178.983 89.8946C175.422 89.8946 172.87 92.6404 172.87 97.5238C172.87 100.509 174.082 105.337 178.947 105.337C181.774 105.337 183.61 103.144 184.252 100.915L188.126 102.536H188.145Z" fill="#00549F"/>
+<path d="M210.142 102.536C209.426 104.416 206.984 109.226 200.687 109.226C195.51 109.226 190.461 105.688 190.461 97.4502C190.461 92.5668 193.215 86.1169 200.852 86.1169C206.488 86.1169 208.82 89.7657 209.756 92.8985L205.699 93.9673C205.442 91.5717 203.441 89.8947 201.017 89.8947C197.456 89.8947 194.904 92.6405 194.904 97.5239C194.904 100.509 196.116 105.337 200.981 105.337C203.808 105.337 205.644 103.144 206.286 100.915L210.16 102.536H210.142Z" fill="#00549F"/>
+<path d="M231.086 108.673H226.992V94.2809L217.206 106.056V108.673H213.094V86.6885H217.206V100.952L226.992 89.1948V86.707H231.086V108.692V108.673Z" fill="#00549F"/>
+<path d="M254.054 108.673H249.96V94.2811L240.157 106.057V108.673H236.062V86.6887H240.157V100.952L249.96 89.1949V86.7071H254.054V108.692V108.673Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H26V2H5C3.34315 2 2 3.34315 2 5V26H0V5Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 195C0 197.761 2.23858 200 5 200H26V198H5C3.34315 198 2 196.657 2 195V174H0V195Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M415.5 195C415.5 197.761 413.261 200 410.5 200H389.5V198H410.5C412.157 198 413.5 196.657 413.5 195V174H415.5V195Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M415.5 5C415.5 2.23858 413.261 0 410.5 0H389.5V2H410.5C412.157 2 413.5 3.34315 413.5 5V26H415.5V5Z" fill="#00549F"/>
+</svg></a>
+    <a class="ep-seal" href="https://reestr.digital.gov.ru/promo/owner/2855840/2764724/" target="_blank" rel="noopener" title="Минцифры России: программное обеспечение ЭСТРА в реестре российского ПО"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Минцифры России: программное обеспечение ЭСТРА в реестре российского ПО" viewBox="0 0 416 200" fill="none">
+<path d="M118.125 141.885V131.814H122.456C123.549 131.814 124.407 132.034 125.031 132.476C125.654 132.917 125.966 133.559 125.966 134.404C125.966 135.228 125.669 135.861 125.074 136.303C124.479 136.734 123.698 136.95 122.729 136.95L122.988 136.518C124.11 136.518 124.969 136.744 125.563 137.195C126.167 137.636 126.47 138.283 126.47 139.137C126.47 140 126.153 140.676 125.52 141.166C124.897 141.645 123.966 141.885 122.729 141.885H118.125ZM119.549 140.748H122.7C123.467 140.748 124.043 140.609 124.427 140.331C124.82 140.043 125.017 139.607 125.017 139.022C125.017 138.437 124.82 138.01 124.427 137.741C124.043 137.473 123.467 137.339 122.7 137.339H119.549V140.748ZM119.549 136.245H122.355C123.055 136.245 123.587 136.106 123.952 135.828C124.326 135.55 124.513 135.142 124.513 134.605C124.513 134.058 124.326 133.646 123.952 133.368C123.587 133.09 123.055 132.95 122.355 132.95H119.549V136.245Z" fill="#00549F"/>
+<path d="M132.737 141.885V131.814H136.665C137.547 131.814 138.3 131.953 138.924 132.231C139.547 132.509 140.027 132.912 140.362 133.44C140.698 133.967 140.866 134.595 140.866 135.324C140.866 136.053 140.698 136.682 140.362 137.209C140.027 137.727 139.547 138.13 138.924 138.418C138.3 138.696 137.547 138.835 136.665 138.835H133.528L134.176 138.159V141.885H132.737ZM134.176 138.302L133.528 137.583H136.622C137.542 137.583 138.238 137.387 138.708 136.993C139.187 136.6 139.427 136.044 139.427 135.324C139.427 134.605 139.187 134.049 138.708 133.655C138.238 133.262 137.542 133.066 136.622 133.066H133.528L134.176 132.346V138.302Z" fill="#00549F"/>
+<path d="M144.176 136.159H149.356V137.382H144.176V136.159ZM144.306 140.633H150.176V141.885H142.867V131.814H149.975V133.066H144.306V140.633Z" fill="#00549F"/>
+<path d="M153.745 136.159H158.924V137.382H153.745V136.159ZM153.874 140.633H159.744V141.885H152.435V131.814H159.543V133.066H153.874V140.633Z" fill="#00549F"/>
+<path d="M166.493 142C165.725 142 165.016 141.875 164.363 141.626C163.721 141.367 163.16 141.007 162.68 140.547C162.21 140.077 161.841 139.53 161.572 138.907C161.304 138.283 161.169 137.598 161.169 136.849C161.169 136.101 161.304 135.415 161.572 134.792C161.841 134.169 162.215 133.627 162.694 133.166C163.174 132.696 163.735 132.337 164.378 132.087C165.03 131.828 165.74 131.699 166.507 131.699C167.284 131.699 167.998 131.833 168.651 132.102C169.313 132.361 169.874 132.749 170.334 133.267L169.399 134.173C169.015 133.77 168.584 133.473 168.104 133.281C167.624 133.08 167.111 132.979 166.565 132.979C165.999 132.979 165.471 133.075 164.982 133.267C164.502 133.459 164.085 133.727 163.73 134.073C163.375 134.418 163.097 134.83 162.896 135.31C162.704 135.78 162.608 136.293 162.608 136.849C162.608 137.406 162.704 137.924 162.896 138.403C163.097 138.873 163.375 139.281 163.73 139.626C164.085 139.971 164.502 140.24 164.982 140.432C165.471 140.624 165.999 140.72 166.565 140.72C167.111 140.72 167.624 140.624 168.104 140.432C168.584 140.23 169.015 139.923 169.399 139.511L170.334 140.417C169.874 140.935 169.313 141.329 168.651 141.597C167.998 141.866 167.279 142 166.493 142Z" fill="#00549F"/>
+<path d="M174.261 141.885V132.691L174.621 133.066H170.823V131.814H179.124V133.066H175.326L175.671 132.691V141.885H174.261Z" fill="#00549F"/>
+<path d="M180.873 141.885V131.814H184.8C185.683 131.814 186.436 131.953 187.059 132.231C187.683 132.509 188.162 132.912 188.498 133.44C188.834 133.967 189.002 134.595 189.002 135.324C189.002 136.053 188.834 136.682 188.498 137.209C188.162 137.727 187.683 138.13 187.059 138.418C186.436 138.696 185.683 138.835 184.8 138.835H181.664L182.311 138.159V141.885H180.873ZM182.311 138.302L181.664 137.583H184.757C185.678 137.583 186.373 137.387 186.843 136.993C187.323 136.6 187.563 136.044 187.563 135.324C187.563 134.605 187.323 134.049 186.843 133.655C186.373 133.262 185.678 133.066 184.757 133.066H181.664L182.311 132.346V138.302Z" fill="#00549F"/>
+<path d="M192.312 136.159H197.491V137.382H192.312V136.159ZM192.442 140.633H198.312V141.885H191.003V131.814H198.11V133.066H192.442V140.633Z" fill="#00549F"/>
+<g clip-path="url(#clip0_5746_3184)">
+<path d="M80.1643 57H72.3164V65.0796H80.1643V57Z" fill="#00549F"/>
+<path d="M60.5432 77.1963H52.6953V85.2759H60.5432V77.1963Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M44.8479 69.1184H68.3934V93.3572H44.8479V69.1184ZM37 61.0388V101.437H76.2413V69.1184H68.3934V61.0388H37Z" fill="#00549F"/>
+<path d="M326.513 91.7926H332.726C334.521 91.7926 335.918 91.3475 336.919 90.4593C337.921 89.571 338.421 88.4165 338.421 86.9938C338.421 85.5711 337.921 84.4166 336.919 83.5284C335.918 82.6401 334.521 82.195 332.726 82.195H326.513V91.7887V91.7926ZM322.37 95.7906V69.1379H326.513V78.199H332.726C335.626 78.199 337.99 79.0522 339.82 80.7568C341.65 82.4263 342.564 84.506 342.564 86.9938C342.564 89.4816 341.65 91.5768 339.82 93.2833C337.99 94.9529 335.626 95.7886 332.726 95.7886H322.37V95.7906ZM345.927 95.7906V69.1379H350.07V95.7886H345.927V95.7906ZM297.396 75.3769C295.74 77.2252 294.911 79.5887 294.911 82.4652C294.911 85.3417 295.74 87.7071 297.396 89.5535C299.086 91.4019 301.193 92.3251 303.713 92.3251C306.234 92.3251 308.321 91.4019 309.978 89.5535C311.668 87.7052 312.515 85.3417 312.515 82.4652C312.515 79.5887 311.67 77.2233 309.978 75.3769C308.321 73.5285 306.232 72.6053 303.713 72.6053C301.195 72.6053 299.088 73.5285 297.396 75.3769ZM290.769 105.919V69.1379H294.911V73.4022H294.963L295.48 72.6033C296.068 71.6801 297.119 70.7919 298.638 69.9386C300.157 69.0504 302.021 68.6053 304.229 68.6053C307.68 68.6053 310.615 69.9386 313.03 72.6033C315.446 75.233 316.654 78.5197 316.654 82.4633C316.654 86.4068 315.446 89.7129 313.03 92.3776C310.615 95.0073 307.68 96.3212 304.229 96.3212C302.019 96.3212 300.138 95.8955 298.585 95.0423C297.066 94.1541 296.03 93.2309 295.478 92.2707L294.961 91.5244H294.91V105.917H290.767L290.769 105.919ZM261.055 75.8025C259.294 77.579 258.414 79.8005 258.414 82.4652C258.414 85.1299 259.294 87.3689 261.055 89.1804C262.816 90.9568 265.041 91.917 267.733 92.0589V72.8696C265.041 73.0115 262.814 73.9891 261.055 75.8006V75.8025ZM271.875 72.8715V92.0608C274.568 91.9189 276.794 90.9588 278.554 89.1823C280.315 87.3709 281.194 85.1318 281.194 82.4671C281.194 79.8025 280.315 77.5809 278.554 75.8045C276.792 73.993 274.568 73.0154 271.875 72.8735V72.8715ZM258.103 91.7945C255.548 89.1998 254.272 86.092 254.272 82.4671C254.272 78.8423 255.548 75.752 258.103 73.1922C260.658 70.5975 263.867 69.1593 267.733 68.8755V58.4772H271.875V68.8716C275.741 69.1554 278.951 70.5956 281.505 73.1884C284.06 75.7461 285.337 78.8384 285.337 82.4633C285.337 86.0881 284.06 89.1979 281.505 91.7906C278.951 94.3484 275.741 95.7712 271.875 96.0549V105.915H267.733V96.0549C263.867 95.7712 260.658 94.3484 258.103 91.7906V91.7945ZM226.049 95.7925V69.1379H230.192V89.1259L230.14 89.6585H230.243L244.17 69.1379H248.83V95.7886H244.687V75.8006L244.739 75.268H244.636L230.707 95.7886H226.047L226.049 95.7925ZM196.268 95.7925V69.1379H200.411V91.7906H213.872V69.1379H218.014V91.7906H221.638V101.919H217.495V95.7886H196.268V95.7925ZM166.233 95.7925V69.1379H170.376V80.0648H184.873V69.1379H189.016V95.7886H184.873V84.0628H170.376V95.7886H166.233V95.7925ZM136.2 95.7925V69.1379H140.343V89.1259L140.291 89.6585H140.394L154.321 69.1379H158.981V95.7886H154.838V75.8006L154.89 75.268H154.787L140.86 95.7886H136.2V95.7925ZM99.6933 95.7925V69.1379H105.906L113.672 85.6605H114.965L122.731 69.1379H128.944V95.7886H124.802V74.4692L124.853 73.9366H124.75L117.036 90.4612H111.6L103.885 73.9366H103.782L103.834 74.4692V95.7906H99.6914L99.6933 95.7925Z" fill="#00549F"/>
+<path d="M378.546 96.2261H355.781V100.205H378.546V96.2261Z" fill="#00549F"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M416 195C416 197.761 413.761 200 411 200H390V198H411C412.657 198 414 196.657 414 195V174H416V195Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 195C0 197.761 2.23858 200 5 200H26V198H5C3.34315 198 2 196.657 2 195V174H0V195Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M416 5C416 2.23858 413.761 0 411 0H390V2H411C412.657 2 414 3.34315 414 5V26H416V5Z" fill="#00549F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H26V2H5C3.34315 2 2 3.34315 2 5V26H0V5Z" fill="#00549F"/>
+<defs>
+<clipPath id="clip0_5746_3184">
+<rect width="341.544" height="48.9168" fill="white" transform="translate(37 57)"/>
+</clipPath>
+</defs>
+</svg></a>
+  </div>
+  <p><strong>Реестр российской промышленной продукции (Минпромторг, ГИСП).</strong> 40 изделий ЭСТРА имеют заключение о подтверждении производства на территории России. Номера пригодятся, если в закупке есть требование подтвердить российское происхождение продукции.</p>
+  <div class="ep-table-wrap">
+    <table>
+      <thead><tr><th>Изделия</th><th>Номера заключений</th><th>Действуют до</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Изделия">МКЗП-МИКРО 2.0, 14 модификаций</td><td data-label="Номера заключений" class="ep-num">10633883–10633896</td><td data-label="Действуют до" class="ep-num">02.07.2028</td></tr>
+        <tr><td data-label="Изделия">ЭСТРА-ПС, ЭСТРА-ПС/ТТ, ЭСТРА-ПС-1, МКЗП-ПС 2.0</td><td data-label="Номера заключений" class="ep-num">10679466–10679469</td><td data-label="Действуют до" class="ep-num">30.07.2028</td></tr>
+        <tr><td data-label="Изделия">11 датчиков: КДТН-01-3, КДТН-02, ЭСТРА-ДН-01, ЭСТРА-ДТ-01-3, ЭСТРА-ДТ-02-3, ЭСТРА-ДТ-02-4, ЭСТРА-ФТНП-01, -02, -03, ЭСТРАМЕТРИК-01, ЭСТРАМЕТРИК-01-05S</td><td data-label="Номера заключений" class="ep-num">10722943–10722953</td><td data-label="Действуют до" class="ep-num">29.09.2028</td></tr>
+        <tr><td data-label="Изделия">ЭСТРА-ДЗТ</td><td data-label="Номера заключений" class="ep-num">10776019</td><td data-label="Действуют до" class="ep-num">29.01.2029</td></tr>
+        <tr><td data-label="Изделия">ЭСТРА-АРКТ</td><td data-label="Номера заключений" class="ep-num">10776020</td><td data-label="Действуют до" class="ep-num">29.01.2029</td></tr>
+        <tr><td data-label="Изделия">Блоки питания ЭСТРА-БК и ЭСТРА-БПК, МИКО-ДЗ, МК-РЗР-220В (с УСО и без УСО), МК-РЗГ-220В, КДТН-02-Ф</td><td data-label="Номера заключений" class="ep-num">10787201–10787207</td><td data-label="Действуют до" class="ep-num">18.02.2029</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ep-cond">
+    <p style="margin:0">Строка в таблицу: <strong>ЭСТРА-РЕЛЕ, ЭСТРА-РЕЛЕ.Д</strong> · 10776018, 10776021 · до 29.01.2029. В ГИСП эти заключения числятся за ТУ 2021, карточки «Защитное реле ЭСТРА-РЕЛЕ» по ТУ 2026 без номера.</p>
+  </div>
+  <p class="ep-note">Данные ГИСП на <span class="ep-ph">дата сверки перед публикацией</span>. <a href="https://gisp.gov.ru/company-catalog/company/20077696" target="_blank" rel="noopener">Карточка ЭСТРА в ГИСП</a></p>
+
+  <div class="ep-reg">
+    <p><strong>Реестр российского ПО (Минцифры).</strong> Программа настройки Uprog внесена в реестр 2 декабря 2024 года. Прошивка серии МКЗП-МИКРО 2.0 внесена в реестр в апреле 2025 года. <span class="ep-ph">номера реестровых записей</span></p>
+  </div>
+  <div class="ep-reg">
+    <p><strong>Государственный реестр средств измерений.</strong> Датчики тока ЭСТРА-ДТ и датчики напряжения ЭСТРА-ДН внесены в Госреестр СИ, на них получено свидетельство об утверждении типа. <span class="ep-ph">номер в Госреестре СИ, срок действия свидетельства</span></p>
+  </div>
+  <div class="ep-reg">
+    <p><strong>Сертификаты и декларации.</strong> Полный перечень с файлами в разделе <a href="/docs/sertifikaty">Сертификаты и декларации</a>. <span class="ep-ph">сертификат системы менеджмента качества, если есть: стандарт, номер, срок</span></p>
+  </div>
+</section>
+
+<!-- БЛОК 12: производственная площадка -->
+<section class="ep-section" id="ploshchadka">
+  <h2>Производственная площадка в Новосибирске</h2>
+  <div class="ep-site">
+    <div class="ep-map">Карта: г. Новосибирск, ул. Станционная, зд. 30а, корп. 3<br>(виджет Яндекс Карт из шаблона сайта)</div>
+    <div>
+      <ul class="ep-list">
+        <li><strong>Адрес производства:</strong> г. Новосибирск, ул. Станционная, зд. 30а, корп. 3.</li>
+        <li><strong>Отдел продаж:</strong> г. Новосибирск, ул. Фрунзе, д. 242, офис 412; <a href="tel:+73833885154">+7 (383) 388-51-54</a>, <a href="mailto:sale@rza-estra.ru">sale@rza-estra.ru</a>.</li>
+        <li><strong>Площадь:</strong> <span class="ep-ph">общая площадь производства, м², отдельно от офисов</span> В 2021 году новая площадка расширила технологический процесс на 750 м².</li>
+        <li><strong>Выпуск:</strong> <span class="ep-ph">сколько устройств в месяц или в год, какие изделия считаются</span></li>
+        <li><strong>Команда:</strong> <span class="ep-ph">численность производственного персонала</span></li>
+      </ul>
+      <div class="ep-cond">
+        <p><strong>Экскурсия по производству.</strong> Покажем этапы выпуска устройства: от конструкторской документации до сборки и испытаний. <span class="ep-ph">как записаться, сроки, ограничения</span> В 2026 году производство показывали студентам факультета энергетики НГТУ НЭТИ.</p>
+        <a class="ep-btn ep-btn--outline" href="#form">Записаться на экскурсию</a>
+      </div>
+    </div>
+  </div>
+  <div class="ep-photo ep-photo--wide" style="margin-top:28px" data-alt="Видео о производстве ЭСТРА"><strong>Видео: ролик о производстве или нарезка по этапам из блока «Как устройство РЗА проходит производство»</strong></div>
+</section>
+
+<!-- БЛОК 13: проекты. href = URL проектов на сайте; ниже лента логотипов из главной: ДРСК, Газпром, Татбурнефть, Минудобрения Россошь, РМК, РУСАЛ, Лукойл, Роснефть, СУЭК-Кузбасс, Россети Новосибирск -->
+<section class="ep-section" id="proekty">
+  <h2>Проекты</h2>
+  <div class="ep-cards">
+    <a class="ep-card" href="#"><span class="ep-card__title">Удоканская медь</span><p>Устройства релейной защиты электрооборудования ООО «Удоканская медь»</p></a>
+    <a class="ep-card" href="#"><span class="ep-card__title">Сибирь-Полиметаллы</span><p>Реконструкция устройств релейной защиты Рубцовской обогатительной фабрики ОАО «Сибирь-Полиметаллы»</p></a>
+    <a class="ep-card" href="#"><span class="ep-card__title">Бурибаевский ГОК</span><p>Устройства релейной защиты РП 6 кВ Бурибаевского горно-обогатительного комбината: МКЗП-М3</p></a>
+  </div>
+</section>
+
+<!-- БЛОК 14: FAQ. Разметка FAQPage в конце файла: в нее вошли только вопросы без заглушек -->
+<section class="ep-section ep-faq" id="faq">
+  <h2>Вопросы о производстве</h2>
+  <div class="ep-faq__item">
+    <h3 class="ep-faq__q">По каким документам выпускаются устройства?</h3>
+    <div class="ep-faq__a"><p>По техническим условиям ЭСТРА: например, терминалы МКЗП-МИКРО 2.0 выпускаются по ТУ 27.12.31–251–23566247–2023, ЭСТРА-ДЗТ по ТУ 27.12.31–254–23566247–2024. <span class="ep-ph">основные стандарты, по которым проводятся испытания</span></p></div>
+  </div>
+  <div class="ep-faq__item">
+    <h3 class="ep-faq__q">Как подтверждено российское производство?</h3>
+    <div class="ep-faq__a"><p>40 изделий имеют заключения Минпромторга о подтверждении производства на территории России, номера и сроки действия приведены в блоке <a href="#reestry">«Реестры и документы»</a>. Программа Uprog и прошивка МКЗП-МИКРО 2.0 внесены в реестр российского ПО.</p></div>
+  </div>
+  <div class="ep-faq__item">
+    <h3 class="ep-faq__q">Какая доля отечественных комплектующих?</h3>
+    <div class="ep-faq__a"><p><span class="ep-ph">доля в процентах, как считается (по стоимости или по числу позиций), для каких изделий</span></p></div>
+  </div>
+  <div class="ep-faq__item">
+    <h3 class="ep-faq__q">Сколько ждать поставку?</h3>
+    <div class="ep-faq__a"><p>Средний срок отгрузки 10 дней. Если поставка привязана к графику, ключевые позиции можно зарезервировать заранее.</p></div>
+  </div>
+  <div class="ep-faq__item">
+    <h3 class="ep-faq__q">Можно ли приехать на производство?</h3>
+    <div class="ep-faq__a"><p><span class="ep-ph">да или нет; порядок записи</span></p></div>
+  </div>
+</section>
+
+<!-- БЛОК 15: финальный призыв. #form = якорь формы обратной связи шаблона -->
+<section class="ep-section">
+  <div class="ep-cta">
+    <div>
+      <h2>Подберем устройство под ваш объект</h2>
+      <p>Пришлите опросный лист, однолинейную схему или фото ячейки. Инженер подберет модификацию; на вопрос реагируем в среднем за 15 минут.</p>
+    </div>
+    <div class="ep-btns">
+      <a class="ep-btn ep-btn--white" href="https://rza-estra.ru/docs/oprosnye-listy/">Отправить опросный лист</a>
+      <a class="ep-phone" href="tel:+73833885154" style="align-self:center">+7 (383) 388-51-54</a>
+    </div>
+  </div>
+</section>
+
+<script>
+/* Тезис: каждое слово проявляется, когда доходит до линии на 40% высоты экрана снизу; один раз, IntersectionObserver */
+(function(){
+  var box=document.querySelector('.ep-tagline');
+  if(!box||!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  box.querySelectorAll('.ep-tagline__line').forEach(function(line){
+    line.innerHTML=line.textContent.trim().split(/\s+/).map(function(w){return '<span class="ep-w">'+w+'</span>';}).join(' ');
+  });
+  box.classList.add('ep-tagline--js');
+  var n=0,io=new IntersectionObserver(function(es){
+    es.filter(function(e){return e.isIntersecting;}).forEach(function(e,i){
+      e.target.style.transitionDelay=(i*60)+'ms';
+      e.target.classList.add('is-on');io.unobserve(e.target);
+    });
+  },{rootMargin:'0px 0px -40% 0px'});
+  box.querySelectorAll('.ep-w').forEach(function(w){io.observe(w);});
+})();
+</script>
+
+<!-- Разметка FAQPage: только вопросы без заглушек. Остальные добавить после ответов клиента -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Как подтверждено российское производство?",
+     "acceptedAnswer": {"@type": "Answer", "text": "40 изделий имеют заключения Минпромторга о подтверждении производства на территории России, номера и сроки действия приведены в блоке «Реестры и документы». Программа Uprog и прошивка МКЗП-МИКРО 2.0 внесены в реестр российского ПО."}},
+    {"@type": "Question", "name": "Сколько ждать поставку?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Средний срок отгрузки 10 дней. Если поставка привязана к графику, ключевые позиции можно зарезервировать заранее."}}
+  ]
+}
+</script>
+
+</div>
+<!-- ================= КОНЕЦ КОНТЕНТА ================= -->
+
+</div>
+</body>
+</html>
